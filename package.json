@@ -36,6 +36,7 @@
   "scripts": {
     "dev": "next dev",
     "start": "next start",
+    "prebuild": "node -e \"require('node:fs').rmSync('.next', { recursive: true, force: true })\"",
     "build": "next build --webpack",
     "test": "react-scripts test"
   },
