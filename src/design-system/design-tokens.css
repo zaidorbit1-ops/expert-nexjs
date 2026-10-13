@@ -1,0 +1,54 @@
+:root {
+  color-scheme: light;
+  --color-navy: #0D3055;
+  --color-navy-deep: #082438;
+  --color-navy-darker: #081829;
+  --color-gold: #CFA049;
+  --color-gold-deep: #C89545;
+  --rgb-navy: 13 48 85;
+  --rgb-navy-deep: 8 36 56;
+  --rgb-navy-darker: 8 24 41;
+  --rgb-gold: 207 160 73;
+  --rgb-gold-deep: 200 149 69;
+  --color-white: #FFFFFF;
+  --color-neutral-50: #F8F9FA;
+  --color-neutral-100: #F1F3F5;
+  --color-neutral-200: #E4E7EB;
+  --color-neutral-300: #D1D6DC;
+  --color-neutral-400: #9AA3AD;
+  --color-neutral-500: #66717D;
+  --color-neutral-700: #39434D;
+  --rgb-neutral-50: 248 249 250;
+  --rgb-neutral-100: 241 243 245;
+  --rgb-neutral-200: 228 231 235;
+  --rgb-neutral-300: 209 214 220;
+  --rgb-neutral-400: 154 163 173;
+  --rgb-neutral-500: 102 113 125;
+  --color-background: var(--color-white);
+  --color-surface: var(--color-neutral-50);
+  --color-text: var(--color-navy-darker);
+  --color-muted: var(--color-neutral-500);
+  --color-border: var(--color-neutral-200);
+  --color-error: var(--color-navy-deep);
+  --font-size-label: 0.75rem;
+  --font-size-body: 1.0625rem;
+  --font-size-h1: clamp(3.25rem, 6.2vw, 5rem);
+  --font-size-h2: clamp(2.25rem, 4vw, 3.5rem);
+  --space-unit: 0.5rem;
+  --space-section: 6rem;
+  --space-section-mobile: 4rem;
+  --radius-card: 1.5rem;
+  --radius-panel: 2rem;
+  --shadow-soft: 0 16px 50px -24px rgba(8, 24, 41, 0.18);
+  --shadow-deep: 0 28px 70px -40px rgba(8, 24, 41, 0.38);
+  --motion-fast: 180ms;
+  --motion-base: 320ms;
+  --motion-slow: 650ms;
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  transition: background-color var(--motion-base), color var(--motion-base);
+}
